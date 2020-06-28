@@ -22,7 +22,7 @@ passport.use(
         } else {
           const name = profile.displayName.split(' ');
           user = await User.create({
-            googleId: profile.id,
+            gitHubId: profile.id,
             displayName: profile.displayName,
             firstName: name[0],
             lastName: name[1],
