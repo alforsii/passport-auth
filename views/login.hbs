@@ -1,0 +1,38 @@
+  <div class="login-form-main">
+        <h2>Login</h2>
+   <form action="/login" method="POST" class="login-form">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <a href="/signup" class="link">Not signed up? </a>
+   <hr/>
+    </form>
+    <div>
+        <a href="/auth/google" class="btn btn-primary">
+            <i class="fab fa-google"></i> Login with google
+        </a>
+    </div>
+    <br/>
+    <div>
+        <a href="/auth/github" class="btn btn-primary">
+            <i class="fab fa-github"></i> Login with github
+        </a>
+    </div>
+    <br/>
+    <div>
+        <a href="/auth/facebook" class="btn btn-primary">
+            <i class="fab fa-github"></i> Login with facebook
+        </a>
+    </div>
+  </div>

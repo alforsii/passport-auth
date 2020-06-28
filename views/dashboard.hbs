@@ -1,0 +1,20 @@
+<h2>Welcome dashboard.</h2>
+<a href="/logout">
+<button class="btn btn-primary">Logout</button>
+</a>
+
+
+{{#if name}}
+{{!-- {{log this}} --}}
+<h2> Hello, {{name}} </h2>
+{{/if}}
+{{#if image}}
+{{!-- {{log this}} --}}
+<img width="200" src="{{image}}" alt="{{name}}">
+{{/if}}
+
+{{#if email}}
+{{!-- {{log this}} --}}
+<h2> Hello, {{email}} </h2>
+{{/if}}
+
