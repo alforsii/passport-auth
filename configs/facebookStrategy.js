@@ -16,7 +16,7 @@ passport.use(
       console.log('profile', profile);
 
       try {
-        let user = await User.findOne({ googleId: profile.id });
+        let user = await User.findOne({ facebookId: profile.id });
         if (user) {
           return cb(null, user);
         } else {
